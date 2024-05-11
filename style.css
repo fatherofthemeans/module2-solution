@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  h1 {
+    text-align: center;
+    margin: 30px;
+  }
+  .text {
+    flex: 1;
+    margin-right: 10px;
+    position: relative;
+    background-color: lightgrey;
+    border: 1px solid black;
+    flex-basis: calc(33.33% - 20px);
+  }
+  
+  .corner-header {
+    text-align: center;
+    right: 0px;
+    position: absolute;
+    background-color: lightcoral;
+    color: black;
+    padding: 5px 30px;
+    margin: 0;
+    border-bottom: 2px solid darkred;
+    border: 1px solid black;
+  }  
+  .corner-header2 {
+    text-align: center;
+    right: 0px;
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 5px 30px;
+    margin: 0;
+    border-bottom: 2px solid darkred;
+    border: 1px solid black;
+  }
+  .corner-header3 {
+    text-align: center;
+    right: 0px;
+    position: absolute;
+    background-color: lightyellow;
+    color: black;
+    padding: 5px 30px;
+    margin: 0;
+    border-bottom: 2px solid darkred;
+    border: 1px solid black;
+  }
+  p {
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    .text {
+      flex-basis: calc(50% - 20px); 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .text {
+      flex-basis: calc(100% - 20px); 
+  } }
